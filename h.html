@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                text-align: center;
+            }
+            form {
+                position: relative;
+                bottom: 0;
+                right: 0;
+            }
+        </style>
+        <link rel = "stylesheet" href = "Hangman.css">
+        <title> Hangman </title>
+    </head>
+    <body>
+        <h1>    The game is simple<br>
+            Player1 gives a word and Player2 has x moves to find the word<br>
+            (one move is when Player2 has searched a letter)<br>
+        </h1>
+        Please enter a word Player1: <input type="text" id="inputWord" placeholder="Word..">
+        <input type="button" onclick="theWord()" value="Input"><br>
+        <br>
+        Let's find the word Player2: <input type="text" id="letter" placeholder="Letter..">
+        <input type="button" onclick="findLetter()" value="Search"><br>
+        <br>
+        <button type="button" onclick = reset() > Reset the game </button>
+        <script src = "Hangman.js"></script>
+    </body>
+</html>
