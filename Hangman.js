@@ -1,4 +1,4 @@
-var currWord, currMoves;
+let currWord, currMoves;
 function theWord() {
     currWord = document.getElementById("inputWord").value;
     currMoves = currWord.length + 3;
@@ -9,6 +9,7 @@ function theWord() {
     }
     document.getElementById("inputWord").value = "";
 }
+
 function findLetter() {
     var currLetter = document.getElementById("letter").value;
     --currMoves;
